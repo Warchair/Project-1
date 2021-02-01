@@ -1,6 +1,8 @@
+
 $color-main: #53a7f5;
 $color-support-1: #F62B13;
-$color-support-2:black;
+$color-support-2:#000000;
+
 @font-face {
     font-family: "Righteous";
     src: url("../font/Righteous-Regular.ttf") format("truetype");
@@ -27,9 +29,6 @@ $color-support-2:black;
     margin:0;
 }
 
-body {
-    background-color:$color-main;
-}
 
 .navbar {
     background-color: $color-main;
@@ -155,14 +154,16 @@ body {
             gap:10px;
         }
         .product-1 {
-            background-color:#263646;
+            background-color:#e2ecf3;
             border-radius: 30px;
-            color:white;
+            color:black;
+            font-weight: 500;
         }
         .product-2 {
-            background-color:#263646;
+            background-color:#e2ecf3;
             border-radius: 30px;
-            color:white;
+            color:black;
+            font-weight: 500;
         }
         .product-picture {
             margin:20px auto;
@@ -179,9 +180,13 @@ body {
         .keterangan {
             padding:30px;
         }
-
+        .w-50 {
+            font-size:15px;
+        }
     }
+    
 }
+
 
 footer {
     padding-left: 30px;

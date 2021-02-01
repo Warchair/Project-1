@@ -18,10 +18,6 @@
   margin: 0;
 }
 
-body {
-  background-color: #53a7f5;
-}
-
 .navbar {
   background-color: #53a7f5;
   font-family: 'Secular One';
@@ -49,7 +45,7 @@ body {
 }
 
 .navbar ul li button.signin {
-  border: 2px solid black;
+  border: 2px solid #000000;
 }
 
 .navbar ul li button.login:hover {
@@ -57,7 +53,7 @@ body {
 }
 
 .navbar ul li button.signin:hover {
-  background-color: black;
+  background-color: #000000;
 }
 
 .pictures {
@@ -161,15 +157,17 @@ body {
 }
 
 #product .container .product-1 {
-  background-color: #263646;
+  background-color: #e2ecf3;
   border-radius: 30px;
-  color: white;
+  color: black;
+  font-weight: 500;
 }
 
 #product .container .product-2 {
-  background-color: #263646;
+  background-color: #e2ecf3;
   border-radius: 30px;
-  color: white;
+  color: black;
+  font-weight: 500;
 }
 
 #product .container .product-picture {
@@ -188,6 +186,10 @@ body {
 
 #product .container .keterangan {
   padding: 30px;
+}
+
+#product .container .w-50 {
+  font-size: 15px;
 }
 
 footer {
@@ -265,6 +267,182 @@ footer .footer .social-logo ul li img:hover {
   }
   .navbar ul button {
     display: none;
+  }
+}
+
+.container .col-md-6 .image {
+  margin-top: -200px;
+}
+
+.container .col-md-6 h1 {
+  margin-top: 40px;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.container .col-md-6 .p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.container .col-md-6 form {
+  margin-top: 80px;
+}
+
+.container .col-md-6 form ul {
+  list-style: none;
+}
+
+.container .col-md-6 form ul li {
+  margin-bottom: 10px;
+}
+
+.container .col-md-6 form ul li p {
+  font-weight: bold;
+}
+
+.container .col-md-6 form ul .input label {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.container .col-md-6 form ul .input .label {
+  width: 10%;
+}
+
+.container .col-md-6 form ul .input input {
+  padding: 10px;
+  font-size: 17px;
+  width: 100%;
+  border: 3px solid #313030;
+  font-weight: bold;
+  border-radius: 50px;
+}
+
+.container .col-md-6 form ul button {
+  padding: 12px;
+  width: 100%;
+  border-radius: 50px;
+  border: none;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.container .col-md-6 form ul button:focus, .container .col-md-6 form ul input:focus {
+  outline: none;
+}
+
+.container .col-md-6 form ul button:hover {
+  opacity: .8;
+}
+
+.container .col-md-6 form ul .login {
+  background-color: #70e670;
+}
+
+.container .col-md-6 form ul .login-facebook {
+  background-color: blue;
+}
+
+.container .col-md-6 form ul .login-google {
+  background-color: red;
+}
+
+@media (max-width: 992px) {
+  .container .col-md-6 .image {
+    margin-top: -50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container .col-md-6 form {
+    margin-top: 10px;
+  }
+  .container .image {
+    display: none;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#sign-up {
+  background: -webkit-gradient(linear, left top, left bottom, from(#53a7f5), to(white));
+  background: linear-gradient(top, #53a7f5, white);
+}
+
+.form-signup {
+  margin-top: 120px;
+}
+
+.form-signup h1 {
+  margin-bottom: 20px;
+}
+
+.form-signup ul {
+  list-style: none;
+}
+
+.form-signup ul li {
+  font-size: 18px;
+  font-weight: 650;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form-signup ul label {
+  width: 20%;
+}
+
+.form-signup ul input {
+  font-size: 16px;
+  font-weight: 400;
+  width: 70%;
+  padding: 9px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  border: 2px solid #585151;
+  background-color: #e9ebf0;
+}
+
+.form-signup ul select {
+  font-size: 16px;
+  padding: 9px;
+  border-radius: 3px;
+  border: 2px solid #585151;
+  background-color: #e9ebf0;
+}
+
+.form-signup ul button {
+  background-color: #5ff332;
+  padding: 10px;
+  border: 0.5px solid #f6eeee;
+  border-radius: 4px;
+  font-weight: 500;
+  -webkit-box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
+}
+
+.form-signup ul button:hover {
+  opacity: .7;
+}
+
+@media (max-width: 1046px) {
+  #sign-up .col-md-5 {
+    display: none;
+  }
+  #sign-up .col-md-6 {
+    margin: 50px auto;
+  }
+  #sign-up .form-signup {
+    margin: 0px;
   }
 }
 /*# sourceMappingURL=style.css.map */
