@@ -13,6 +13,11 @@
   src: url("../font/NewsCycle-Regular.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "caveat";
+  src: url("../font/Caveat-VariableFont_wght.ttf") format("truetype");
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -90,7 +95,11 @@
   -webkit-box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6);
           box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6);
   font-size: 18px;
-  font-weight: 700;
+  font-weight: bold;
+}
+
+.pictures .container .btn-eksplore:focus {
+  outline: none;
 }
 
 .pictures .container .btn-eksplore:hover {
@@ -320,12 +329,18 @@ footer .footer .social-logo ul li img:hover {
 }
 
 .container .col-md-6 form ul button {
+  color: #f0eeee;
   padding: 12px;
   width: 100%;
   border-radius: 50px;
   border: none;
   font-size: 17px;
   font-weight: bold;
+}
+
+.container .col-md-6 form ul button a {
+  text-decoration: none;
+  color: white;
 }
 
 .container .col-md-6 form ul button:focus, .container .col-md-6 form ul input:focus {
@@ -373,12 +388,41 @@ footer .footer .social-logo ul li img:hover {
   background: linear-gradient(top, #53a7f5, white);
 }
 
+#sign-up .col-md-5 {
+  position: relative;
+}
+
+#sign-up .col-md-5 h1 {
+  margin-top: 50px;
+}
+
+#sign-up .col-md-5 h1, #sign-up .col-md-5 h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 75%;
+  padding: 10px;
+  margin: 20px auto;
+  position: absolute;
+  opacity: 1;
+  z-index: 1;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+#sign-up .col-md-5 h2 {
+  margin-top: 300px;
+}
+
+#sign-up .col-md-5 img {
+  opacity: .7;
+}
+
 .form-signup {
   margin-top: 120px;
 }
 
 .form-signup h1 {
   margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .form-signup ul {
@@ -400,15 +444,29 @@ footer .footer .social-logo ul li img:hover {
   width: 20%;
 }
 
+.form-signup ul .privacy {
+  display: inline;
+}
+
+.form-signup ul .privacy input {
+  width: 10%;
+}
+
+.form-signup ul .privacy label.checkbox-agree {
+  margin-top: -8px;
+  width: 80%;
+  font-weight: 500;
+}
+
 .form-signup ul input {
   font-size: 16px;
   font-weight: 400;
   width: 70%;
   padding: 9px;
   margin-bottom: 15px;
-  border-radius: 3px;
+  border-radius: 6px;
   border: 2px solid #585151;
-  background-color: #e9ebf0;
+  background-color: white;
 }
 
 .form-signup ul select {
@@ -416,7 +474,7 @@ footer .footer .social-logo ul li img:hover {
   padding: 9px;
   border-radius: 3px;
   border: 2px solid #585151;
-  background-color: #e9ebf0;
+  background-color: white;
 }
 
 .form-signup ul button {
@@ -428,6 +486,11 @@ footer .footer .social-logo ul li img:hover {
   -webkit-box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.5);
           box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.5);
   margin-top: 20px;
+}
+
+.form-signup ul button a {
+  text-decoration: none;
+  color: black;
 }
 
 .form-signup ul button:hover {

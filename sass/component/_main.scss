@@ -17,6 +17,10 @@ $color-support-2:#000000;
     font-family: "newcycle";
     src: url("../font/NewsCycle-Regular.ttf") format("truetype");
   }
+  @font-face {
+    font-family: "caveat";
+    src: url("../font/Caveat-VariableFont_wght.ttf") format("truetype");
+  }
 
   @mixin display-flex($a-items: center, $j-content:center) {
     display:flex;
@@ -50,10 +54,10 @@ $color-support-2:#000000;
         color:white;
     }
     ul li button.login {
-        border: 2px solid $color-support-1;
+        border: 3px solid $color-support-1;
     }
     ul li button.signin {
-        border: 2px solid $color-support-2;
+        border: 3px solid $color-support-2;
     }
 
     ul li button.login:hover {
@@ -93,7 +97,10 @@ $color-support-2:#000000;
             background-color: $color-main;
             box-shadow: 3px 3px 4px rgba(0,0,0,.6);
             font-size:18px;
-            font-weight:700;
+            font-weight:bold;
+        }
+        .btn-eksplore:focus {
+            outline:none;
         }
         .btn-eksplore:hover {
             background-color: #92f054;

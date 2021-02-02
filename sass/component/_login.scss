@@ -42,12 +42,17 @@
                     }
                 }
                 button {
+                    color:rgb(240, 238, 238);
                     padding:12px;
                     width:100%;
                     border-radius:50px;
                     border:none;
                     font-size: 17px;
                     font-weight: bold;
+                    a {
+                        text-decoration: none;
+                        color:white;
+                    }
                     
                 }
                 button:focus, input:focus {
