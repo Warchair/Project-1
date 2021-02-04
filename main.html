@@ -4,114 +4,256 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sidebar</title>
-    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
     <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    
-    <link rel="stylesheet" href="css/utama.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
     
 </head>
-<body>
-    <div class="navigation">
-        <ul>
-            <li>
-                <a href="#" class="home">
-                    <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
-                    <span class="title">Home</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span class="icon"><i class="fa fa-user" aria-hidden="true"></i></span>
-                    <span class="title">Profile</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span class="icon"><i class="fa fa-commenting" aria-hidden="true"></i></span>
-                    <span class="title">Message</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span class="icon"><i class="fa fa-info-circle" aria-hidden="true"></i></span>
-                    <span class="title">Help</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span class="icon"><i class="fa fa-cog" aria-hidden="true"></i></span>
-                    <span class="title">Setting</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span class="icon"><i class="fa fa-lock" aria-hidden="true"></i></span>
-                    <span class="title">Password</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
-                    <span class="title">Sign Out</span>
-                </a>
-            </li>
-        </ul>
-    </div>
-    <div class="search">
-        <h1>HOMELY</h1>
-        <div class="group-input">
-            <input type="text" placeholder="Search">
-            <button><i class="fa fa-search" aria-hidden="true"></i></button>
+<body id="main-body">
+    <section id="sidebar">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#" class="home">
+                        <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+                        <span class="title">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-user" aria-hidden="true"></i></span>
+                        <span class="title">Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-commenting" aria-hidden="true"></i></span>
+                        <span class="title">Message</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-info-circle" aria-hidden="true"></i></span>
+                        <span class="title">Help</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-cog" aria-hidden="true"></i></span>
+                        <span class="title">Setting</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                        <span class="title">Password</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+            </ul>
         </div>
-        <div class="icon-item">
-            <span class="icon">
-                <a href="">
-                    <i class="fa fa-bell" aria-hidden="true"></i>
+    </section>
+
+    <section id="navigasi-main">
+        <nav class="navigasi-top">
+            <div class="navbar-brand">HOMELY</div>
+            <ul>
+                <li class="input-group mr-5">
+                    <input type="text" placeholder="Search">
+                    <a href=""><button><i class="fa fa-search" aria-hidden="true"></i></button></a>
+                </li>
+                <li class="mr-4">
+                    <a href="" class="text-decoration-none"><i class="fa fa-bell" aria-hidden="true"></i></a>
+                        
+                </li>
+                <li class="mr-4">
+                    <a href="" class="text-decoration-none"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+
+    <section id="content">
+        <div class="content">
+            <div id="carousel-news" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-news" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-news" data-slide-to="1"></li>
+                  <li data-target="#carousel-news" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="image/corausel-news/camera-lens1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>First slide label</h5>
+                      <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="image/corausel-news/design-graphic3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Second slide label</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="image/corausel-news/editing2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Third slide label</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carousel-news" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only"></span>
                 </a>
-            </span>
-            <span class="icon">
-                <a href="">
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                <a class="carousel-control-next" href="#carousel-news" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only"></span>
                 </a>
-            <span>
+              </div>
+              <br>
+
+            <h3>Kelas Utama</h3>
+            <div class="work">
+                <div class="box math">
+                    <span class="icon"><i class="fa fa-calculator" aria-hidden="true"></i></span>
+                    <div class="main">
+                        <h3>Math</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quasi praesentium quisquam accusamus. Beatae, ut.</p>
+                    </div>
+                    
+                </div>
+                <div class="box science">
+                    <span class="icon"><i class="fa fa-flask" aria-hidden="true"></i></span>
+                    <div class="main">
+                        <h3>Science</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur corrupti ex expedita mollitia ipsa rerum.</p>
+                    </div>
+                    
+                </div>
+                <div class="box english">
+                    <span class="icon"><i class="fa fa-globe" aria-hidden="true"></i></i></span>
+                    <div class="main">
+                        <h3>English</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, adipisci voluptatibus neque ipsa tenetur similique dolores.</p>
+                    </div>
+                </div>
+                <div class="box history">
+                    <span class="icon"><i class="fa fa-book" aria-hidden="true"></i></span>
+                    <div class="main">
+                        <h3>History</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta illo officia magnam beatae saepe dignissimos, voluptatem quis?</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Kelas Pemrograman</h3>
+            <div class="list-class">
+                <ul  class="img-class">
+                    <li class="box-class">
+                        <div class="card-img">
+                            <img src="image/class/logo-csharp.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h4>Bahasa C#</h4>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto doloremque pariatur repellat iure ratione possimus quaerat molestiae eos sed reprehenderit?
+                        </div>
+                    </li>
+                    <li class="box-class">
+                        <div class="card-img">
+                            <img src="image/class/logo-javascript.png" alt="">
+                        </div>
+                        
+                        <div class="card-body">
+                            <h4>Bahasa Javascript</h4>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto doloremque pariatur repellat iure ratione possimus quaerat molestiae eos sed reprehenderit?
+                        </div>
+                    </li>
+                    <li class="box-class">
+                        <div class="card-img">
+                            <img src="image/class/logo-python.png" alt="">
+                        </div>
+                        
+                        <div class="card-body">
+                            <h4>Bahasa Python</h4>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto doloremque pariatur repellat iure ratione possimus quaerat molestiae eos sed reprehenderit?
+                        </div>
+                    </li>
+                    <li class="box-class">
+                        <div class="card-img">
+                            <img src="image/class/logo-react.png" alt="">
+                        </div>
+                        
+                        <div class="card-body">
+                            <h4>React</h4>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto doloremque pariatur repellat iure ratione possimus quaerat molestiae eos sed reprehenderit?
+                        </div>
+                    </li>
+                    <li class="box-class">
+                        <div class="card-img">
+                            <img src="image/class/logo-swift.png" alt="">
+                        </div>
+                        
+                        <div class="card-body">
+                            <h4>Bahasa Swift</h4>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto doloremque pariatur repellat iure ratione possimus quaerat molestiae eos sed reprehenderit?
+                        </div>
+                    </li>
+                    <li class="box-class">
+                        <div class="card-img">
+                            <img src="image/class/logo-java.png" alt="">
+                        </div>
+                        
+                        <div class="card-body">
+                            <h4>Bahasa Java</h4>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto doloremque pariatur repellat iure ratione possimus quaerat molestiae eos sed reprehenderit?
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <h3>The Teacher</h3>
+            <div class="teacher">
+                <div class="row">
+                    <div class="col-md-5 mb-4">
+                        <img src="image/the Teacher/jenny.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <h4>Elizabeth</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis et, voluptate non esse ducimus nesciunt repudiandae hic, vero vel voluptatibus dolorem vitae est laboriosam quisquam nisi asperiores placeat nihil. Sed rerum hic sit dolore?</p>
+                    </div>
+
+                    <div class="col-md-5 mb-4">
+                        <img src="image/the Teacher/john.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <h4>John Wick</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis et, voluptate non esse ducimus nesciunt repudiandae hic, vero vel voluptatibus dolorem vitae est laboriosam quisquam nisi asperiores placeat nihil. Sed rerum hic sit dolore?</p>
+                    </div>
+
+                    <div class="col-md-5 mb-4">
+                        <img src="image/the Teacher/justin.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <h4>Justin</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis et, voluptate non esse ducimus nesciunt repudiandae hic, vero vel voluptatibus dolorem vitae est laboriosam quisquam nisi asperiores placeat nihil. Sed rerum hic sit dolore?</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </div>
-    <div class="content">
-        <h2>Recently</h2>
-        <div class="work">
-            <div class="box math">
-                <span class="icon"><i class="fa fa-calculator" aria-hidden="true"></i></span>
-                <div class="main">
-                    <h4>Math</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quasi praesentium quisquam accusamus. Beatae, ut.</p>
-                </div>
-                
-            </div>
-            <div class="box science">
-                <span class="icon"><i class="fa fa-flask" aria-hidden="true"></i></span>
-                <div class="main">
-                    <h3>Science</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur corrupti ex expedita mollitia ipsa rerum.</p>
-                </div>
-                
-            </div>
-            <div class="box english">
-                <span class="icon"><i class="fa fa-globe" aria-hidden="true"></i></i></span>
-                <div class="main">
-                    <h3>English</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, adipisci voluptatibus neque ipsa tenetur similique dolores.</p>
-                </div>
-            </div>
-            <div class="box history">
-                <span class="icon"><i class="fa fa-book" aria-hidden="true"></i></span>
-                <div class="main">
-                    <h3>History</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta illo officia magnam beatae saepe dignissimos, voluptatem quis?</p>
-                </div>
-            </div>
-        </div>
-    </div>
+    </section>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <div class="toggle" onclick="toggleMenu()"></div>
     <script type="text/javascript">
         function toggleMenu(){
