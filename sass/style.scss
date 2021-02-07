@@ -2,6 +2,7 @@ $color-main: #53a7f5;
 $color-support-1: #F62B13;
 $color-support-2:#000000;
 
+@import 'component/mixin_group';
 @import 'component/main';
 @import 'component/login';
 @import 'component/signup';

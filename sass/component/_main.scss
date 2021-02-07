@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: "Cabin";
 }
+
 #main-body {
     height: 100vh;
     background: whitesmoke;
@@ -17,9 +18,8 @@
         width: 300px;
     }
     .navigation {
+        @include box-size(60px, 100%);
         position: fixed;
-        width: 60px;
-        height: 100%;
         background-color: $color-main;
         transition: 0.5s;
         overflow:hidden;
@@ -36,7 +36,7 @@
                 position: relative;
                 width: 100%;
                 list-style:none;
-
+                
                 a {
                     position: relative;
                     display: block;
@@ -44,6 +44,7 @@
                     display:flex;
                     text-decoration: none;
                     color: rgb(54, 54, 54);
+                    color:rgb(255, 251, 251);
                     
                     .title {
                         position:relative;
@@ -97,29 +98,18 @@
         }
 
         .work {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            gap: 10px;
+            @include grid-group(grid, 1fr 1fr);
 
             .box {
                 background-color: rgb(238, 233, 227);
                 padding:30px 10px 30px 10px;
                 border-left:8px solid rgb(66, 66, 66);
                 border-radius: 8px;
-                display:grid;
-                grid-template-columns: 60px 1fr;
                 box-shadow: 2px 3px 5px rgba(0,0,0,.4);
             }
             .box:hover {
                 cursor:pointer;
                 background-color: rgb(223, 215, 215);
-            }
-
-            .icon {
-                display:flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 50px;
             }
         }
 
@@ -127,11 +117,8 @@
             ul.img-class {
                 width:90%;
                 margin:30px auto;
-                display:grid;
                 list-style: none;
-                display:grid;
-                grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
-                grid-gap: 10px;
+                @include grid-group(grid, repeat(auto-fit, minmax(250px, 1fr)));
                 .box-class {
                     border-radius:20px;
                     background-color:white;
@@ -147,6 +134,18 @@
                             padding:50px;
                         }
                     }
+                    button {
+                        padding:10px 20px 10px 20px;
+                        border-bottom-right-radius: 20px;
+                        border-bottom-left-radius: 20px;
+                        border:none;
+                        width:100%;
+                        background-color: $color-main;
+                    }
+                    button:hover {
+                        background-color: rgb(108, 147, 255);
+                    }
+                    
                 }
             }
             
@@ -170,8 +169,7 @@
         padding:10px;
         width:100%;
         height:70px;
-        display:flex;
-        justify-content: space-between;
+        @include flex-group(flex, space-between);
         .navbar-brand {
             margin-left:80px;
             font-weight: bold;
@@ -180,9 +178,7 @@
         
         ul {
             list-style:none;
-            display:flex;
-            justify-content: space-around;
-            justify-content:space-around;
+            @include flex-group(flex, space-around, nowrap);
             font-size: 22px;
             margin-top:4px;
             .input-group {
@@ -225,22 +221,18 @@
     position:absolute;
     top: 0;
     left: 0;
-    width: 60px;
-    height: 60px;
+    @include box-size(60px, 60px);
     /* background-color: whitesmoke;  */
     cursor: pointer;
     display:none;
 }
 .toggle:before {
     content: '\f0c9';
-    font-family: fontAwesome;
+    @include font-group(24px, fontAwesome,rgb(14, 13, 13));
+    @include box-size(100%,100%);
     position: absolute;
-    width: 100%;
-    height: 100%;
     line-height: 60px;
     text-align: center;
-    font-size: 24px;
-    color: rgb(14, 13, 13);
 }
 
 .toggle.active:before {
@@ -273,10 +265,18 @@
     .toggle {
         display:block;
         z-index: 65;
+        position: fixed;
     }
     #content {
         .content {
+            margin-top:80px;
             margin-left: 10px
+        }
+    }
+    #navigasi-main {
+        .navigasi-top {
+            position:fixed;
+            z-index: 65;
         }
     }
     
@@ -291,6 +291,17 @@
     #content {
         .content .work {
             grid-template-columns: 1fr;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    #content, .content {
+        .list-class {
+            ul.img-class {
+                width:100%;
+                @include grid-group(grid, repeat(auto-fit, minmax(100px, 1fr)));
+            }
         }
     }
 }

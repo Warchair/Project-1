@@ -1,0 +1,31 @@
+@mixin font-group($size: 20px, $family: arial, $color: black, $weight: 400) {
+    font-size: $size;
+    font-family: $family;
+    color: $color;
+    font-weight: $weight;
+};
+
+@mixin flex-group($flex: flex, $justify-content: center, $wrap:wrap) {
+    display: $flex;
+    justify-content: $justify-content;
+    flex-wrap: $wrap;
+};
+
+@mixin grid-group($grid: grid, $grid-column: 1fr, $gap: 10px) {
+    display:$grid;
+    grid-template-columns: $grid-column;
+    gap: $gap;
+};
+
+@mixin box-size($width, $height) {
+    width:$width;
+    height:$height;
+}
+
+@mixin box-size-full($width, $height, $padding: 0, $border-radius: 0) {
+    width:$width;
+    height:$height;
+    padding:$padding;
+    border-radius: $border-radius;
+}
+
